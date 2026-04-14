@@ -1,0 +1,58 @@
+:root {
+    --primary: #004b23;
+    --primary-dark: #003518;
+    --primary-light: #1a6e3c;
+    --primary-bg: #e8f3ec;
+    --primary-hover: #003d1c;
+    --text-dark: #1a1a1a;
+    --text-gray: #6b7280;
+    --border-light: #e5e7eb;
+    --bg-gray: #f3f4f6;
+    --white: #ffffff;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+}
+
+/* Button variants */
+.btn-outline-primary {
+    background: transparent;
+    border: 1.5px solid var(--primary);
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Table hover */
+.data-table tr:hover {
+    background: var(--primary-bg);
+}
+
+/* Link */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Pagination active */
+.pagination .active span {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Form focus */
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(0, 75, 35, 0.1) !important;
+}
